@@ -21,10 +21,20 @@
 
   if($bobby.offsetLeft>=$mst.offsetLeft){
     console.log('좌표 성공!!');
-
+    addScore(n);
   };
 
 
+// 적 죽일 때 스코어 올리기
+  const $myscore = document.getElementById('myscore');
+  
+  const addScore = () => {
+    for (let n = 1; n <= 9999; n++) {
+      $myscore.innerText = n;
+    }
+  }
+    console.log(addScore());
+  
 
 
 /*
