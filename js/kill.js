@@ -29,10 +29,9 @@
   const $myscore = document.getElementById('myscore');
   
   const addScore = () => {
-    for (let n = 1; n <= 9999; n++) {
-      $myscore.innerText = n;
+    $myscore.innerText = +$myscore.innerText+100;
     }
-  }
+  
     console.log(addScore());
   
 
