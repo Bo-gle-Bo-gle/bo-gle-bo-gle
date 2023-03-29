@@ -10,10 +10,19 @@ export default function moveCharacter({style, offsetWidth, offsetLeft, offsetPar
     if($bobby.offsetLeft>=$mst.offsetLeft){
         console.log('meet');
         $mst.style.zIndex='-100';
-    
-    
       };
-    // end kill
+    
+    // 적 죽일 때 스코어 올리기
+    const $myscore = document.getElementById('myscore');
+    const addScore = () => {
+    $myscore.innerText = +$myscore.innerText+50;
+    }
+  
+    console.log(addScore());
+  
+
+
+      // end kill
     
     switch (direction) {
         case 'ArrowRight':
